@@ -1,6 +1,6 @@
-import React from 'react';
-import { faTasks } from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faClipboard, faCog } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Settings from './Settings';
 
 const ContainerStyle = {
     background:'#F4F5F7',
@@ -22,9 +22,20 @@ const TopBox = {
   
 }
 
+const MenuBox = {
+    width: '200px',
+    height: '70px',
+    margin: '10px',
+    marginTop: '20px',
+    marginLeft: '90px',
+    Display: 'flex',
+    FlexDirection: 'column',
+}
+
 const LeftContainer = () => {
     return (
         <div className="container" style={ContainerStyle}>
+            <div>
             <div style={TopBox}>
                 <div>
                     <FontAwesomeIcon icon={faTasks} style={{fontSize: '2.5em', margin: '10px', marginTop: '15px'}}/>
@@ -34,6 +45,11 @@ const LeftContainer = () => {
                     <div style={{color: 'rgb(66, 82, 110)', fontSize: '12px', fontWeight: 'normal', textAlign:'left'}}>Software Test</div>
                 </div>
             </div>
+            <div style={MenuBox}>
+                <Settings icon={<FontAwesomeIcon icon={faClipboard}/>} name={'joe'}/>
+                <Settings icon={<FontAwesomeIcon icon={faCog}/>} name={'up'}/>
+            </div>
+        </div>
         </div>
     )
 }
