@@ -46,8 +46,11 @@ const LeftContainer = () => {
                 </div>
             </div>
             <div style={MenuBox}>
-                <Settings icon={<FontAwesomeIcon icon={faClipboard}/>} name={'joe'}/>
-                <Settings icon={<FontAwesomeIcon icon={faCog}/>} name={'up'}/>
+                <Settings icon={<FontAwesomeIcon icon={faClipboard}/>} name={"Joe's Board"}/>
+                <Settings icon={<FontAwesomeIcon icon={faCog}/>} name={'Project Settings'}/>
+                <br></br>
+                <hr></hr>
+                <Settings icon={<FontAwesomeIcon icon={faCog}/>} name={'Project Settings'}/>
             </div>
         </div>
         </div>
